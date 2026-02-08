@@ -4,41 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lei Zhao</title>
-  <style>
+<style>
 .profile-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;   /* 关键：让照片垂直居中 */
-  flex-wrap: wrap;       /* 允许小屏换行 */
-  gap: 16px;
+  align-items: center; 
+  gap: 20px;
 }
 
 .profile-text {
-  flex: 1 1 300px;       /* 最小宽度控制 */
+  flex: 1 1 auto;
+  min-width: 0;          
 }
 
 .profile-photo {
-  flex: 0 0 120px;
+  flex: 0 0 auto;
   display: flex;
+  align-items: center;   
   justify-content: center;
-  align-items: center;   /* 再次保证图片居中 */
 }
 
 .profile-photo img {
-  width: 100px;
+  width: clamp(70px, 12vw, 120px); 
+  height: auto;
   border-radius: 8px;
 }
 
-/* 📱 小屏适配 */
-@media (max-width: 600px) {
-  .profile-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .profile-photo {
-    align-self: center; /* 小屏时照片居中 */
-  }
+@media (max-width: 480px) {
+  h1 { font-size: 1.4rem; }
+  .profile-text p { font-size: 0.9rem; }
 }
 </style>
 </head>
