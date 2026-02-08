@@ -4,25 +4,64 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lei Zhao</title>
+  <style>
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   /* 关键：让照片垂直居中 */
+  flex-wrap: wrap;       /* 允许小屏换行 */
+  gap: 16px;
+}
+
+.profile-text {
+  flex: 1 1 300px;       /* 最小宽度控制 */
+}
+
+.profile-photo {
+  flex: 0 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* 再次保证图片居中 */
+}
+
+.profile-photo img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+/* 📱 小屏适配 */
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    align-self: center; /* 小屏时照片居中 */
+  }
+}
+</style>
 </head>
 <body>
-  <table style="border: none; width: 100%;">
-    <tr>
-      <td style="vertical-align: top;">
-        <h1>Lei Zhao<span style="font-family: 'KaiTi', 'Kaiti SC', serif;">（赵雷）</span></h1>
-        <p>📍San Marcos, TX, USA</p>
-        <p>
-          [<a href="https://github.com/dttutty" target="_blank">Github</a>] 
-          [<a href="https://www.linkedin.com/in/dttutty/" target="_blank">LinkedIn</a>] 
-          [<a href="https://x.com/dttutty/" target="_blank">x.com</a>] 
-          [<a href="mailto:dttutty@gmail.com">Email</a>]
-        </p>
-      </td>
-      <td style="width: 150px; vertical-align: top; text-align: right;">
-        <img src="img/photo.jpg" alt="Lei Zhao" width="100">
-      </td>
-    </tr>
-  </table>
+  <div class="profile-header">
+  <div class="profile-text">
+    <h1>
+      Lei Zhao
+      <span style="font-family: 'KaiTi', 'Kaiti SC', serif;">（赵雷）</span>
+    </h1>
+    <p>📍San Marcos, TX, USA</p>
+    <p>
+      [<a href="https://github.com/dttutty" target="_blank">Github</a>] 
+      [<a href="https://www.linkedin.com/in/dttutty/" target="_blank">LinkedIn</a>] 
+      [<a href="https://x.com/dttutty/" target="_blank">x.com</a>] 
+      [<a href="mailto:dttutty@gmail.com">Email</a>]
+    </p>
+  </div>
+
+  <div class="profile-photo">
+    <img src="img/photo.jpg" alt="Lei Zhao">
+  </div>
+</div>
 
   
         <p>
