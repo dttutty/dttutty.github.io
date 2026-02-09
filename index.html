@@ -80,30 +80,7 @@
 
 
 
-        <h2  class="section-title">⏳Work In Progress</h2>
-
-  <table style="border: none; width: 100%;">
-  <tr>
-    <td style="vertical-align: top;">
-      <strong>A Scalable Temporal Graph Neural Network Training Framework</strong> [<a href="https://github.com/dttutty/tgl_improve/tree/caching" target="_blank">Github Private Repo</a>]<br/>
-
-<ul style="display: none;">
-        <li>
-            <strong>Identified an optimization opportunity</strong> where interconnect bandwidth (NCCL) remains idle during forward pass, allowing for latency hiding of dynamic feature transmission.
-        </li>
-
-        <li>
-            <strong>Designed a "Planner-Syncer" collaborative system</strong> to exploit this idle time. The Planner pre-calculates data placement (GPU-retention vs. CPU-writeback), enabling the Syncer to asynchronously multicast next-batch features <em>in parallel</em> with the current forward pass.
-        </li>
-
-        <li>
-            <strong>Devised a hybrid synchronization strategy</strong> to mitigate Python GIL contention: adaptively utilizes P2P transport for high-dimensional features to maximize throughput, while falling back to shared memory for low-dimensional features to minimize overhead.
-        </li>
-      </ul>
-      <p><strong>Key technologies:</strong> PyTorch Distributed, Caching, DGL, NCCL, GLOO, shared memory, multi-process, multi-thread, zero-copy</p>
-    </td>
-  </tr>
-</table>
+        
 
 
 
@@ -200,8 +177,8 @@
         </ul>
         
         <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-          <img src="img/gpu_cluster.jpeg" alt="GPU Computing Cluster" style="max-width: 25%; height: auto; border-radius: 5px;">
-          <img src="img/motherboard.jpeg" alt="Server Motherboard" style="max-width: 25%; height: auto; border-radius: 5px;">
+          <img src="img/gpu_cluster.jpeg" alt="GPU Computing Cluster" style="max-width: 25%; max-height: 500px; height: auto; border-radius: 5px;">
+          <img src="img/motherboard.jpeg" alt="Server Motherboard" style="max-width: 25%; max-height: 500px; height: auto; border-radius: 5px;">
         </div>
       </td>
     </tr>
