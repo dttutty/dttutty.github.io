@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lei Zhao</title>
 <style>
+
+.page-container {
+  max-width: 920px;   /* 控制阅读宽度 */
+  margin-left: 0px;  /* 👈 关键：向右推，形成左侧主列 */
+  margin-right: auto; /* 右侧变成弹性留白 */
+  padding-right: 0px;
+}
+
 .profile-header {
   display: flex;
   justify-content: space-between;
@@ -44,6 +52,7 @@
 </style>
 </head>
 <body>
+  <div class="page-container">
   <div class="profile-header">
   <div class="profile-text">
     <h1>
@@ -285,5 +294,6 @@
   </ul>
 
   <p><small>© Copyright Lei Zhao | Design by Lei Zhao | Last updated: 2026-02-07</small></p>
+  </div>
 </body>
 </html>
