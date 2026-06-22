@@ -12,7 +12,7 @@ make build
 
 ## 访问通知
 
-`visit-notify.js` 每 30 分钟最多上报一次匿名访问事件。事件只包含页面路径和来源域名，不包含查询参数；CloudCone 上的 `cloudcone/visit_notify.py` 负责限流并向 ntfy 发布通知。ntfy topic 只保存在服务器的 `/etc/visit-notify.env`，不会写入仓库或发送到浏览器。
+`visit-notify.js` 每 30 分钟最多上报一次匿名访问事件。浏览器只发送页面路径和来源域名，不包含查询参数。CloudCone 上的 `cloudcone/visit_notify.py` 负责限流，从 Cloudflare 请求头读取网络位置，并向 ntfy 发送短访客 ID、脱敏 IP、城市/州/国家、时区、页面和来源。访客 ID 使用服务器端 secret 做 HMAC，完整 IP 不会发送到 ntfy。ntfy topic 只保存在服务器的 `/etc/visit-notify.env`，不会写入仓库或发送到浏览器。
 
 服务器端部署文件位于 `cloudcone/`。在 DNS 将 `notify.dttutty.com` 指向服务器后，把该目录复制到服务器并执行：
 
