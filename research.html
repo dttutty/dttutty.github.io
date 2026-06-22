@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Research</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Lei Zhao</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="projects.html">Projects</a></div>
+<div class="menu-item"><a href="experience.html">Experience</a></div>
+<div class="menu-item"><a href="background.html">Background</a></div>
+<div class="menu-category">Links</div>
+<div class="menu-item"><a href="https://github.com/dttutty">GitHub</a></div>
+<div class="menu-item"><a href="https://www.linkedin.com/in/dttutty/">LinkedIn</a></div>
+<div class="menu-item"><a href="https://x.com/dttutty/">X</a></div>
+<div class="menu-item"><a href="mailto:dttutty@gmail.com">Email</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research</h1>
+</div>
+<p>My research focuses on Machine Learning Systems and Graph Neural Networks, with an emphasis on distributed training, communication, memory systems, and performance optimization.</p>
+<h2>Work in Progress</h2>
+<h3>A Scalable Temporal Graph Neural Network Training Framework</h3>
+<p><a href="https://github.com/dttutty/tgl_improve/tree/caching">Private GitHub repository</a></p>
+<ul>
+<li><p>Identified an opportunity to hide dynamic-feature transfer latency while NCCL bandwidth is idle during the forward pass.</p>
+</li>
+<li><p>Designed a Planner&ndash;Syncer system that prepares data placement and asynchronously multicasts features for the next batch in parallel with the current forward pass.</p>
+</li>
+<li><p>Developed a hybrid synchronization strategy that uses P2P transport for high-dimensional features and shared memory for low-dimensional features.</p>
+</li>
+<li><p><b>Key technologies:</b> PyTorch Distributed, caching, DGL, NCCL, Gloo, shared memory, multiprocessing, multithreading, and zero-copy communication.</p>
+</li>
+</ul>
+<p>© Lei Zhao</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

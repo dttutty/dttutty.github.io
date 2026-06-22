@@ -1,4 +1,4 @@
-# jemdoc: nodate
+# jemdoc: menu{MENU}{index.html}, nodate
 = Lei Zhao
 
 ~~~
@@ -6,130 +6,31 @@
 *Ph.D. Student in Computer Science* \n
 Texas State University, San Marcos, TX, USA
 
-[https://github.com/dttutty GitHub] | [https://www.linkedin.com/in/dttutty/ LinkedIn] | [https://x.com/dttutty/ X] | [mailto:dttutty@gmail.com Email]
-
 I am a Computer Science Ph.D. student at Texas State University, advised by Dr. Chul-Ho Lee ([https://sites.google.com/site/chulholeesite/ website]). My research focuses on *Machine Learning Systems (MLSys)* and *Graph Neural Networks (GNNs)*.
-
 ~~~
 
-== Work in Progress
+== Research Interests
 
-=== A Scalable Temporal Graph Neural Network Training Framework
-[https://github.com/dttutty/tgl_improve/tree/caching Private GitHub repository]
+- Machine Learning Systems
+- Graph Neural Networks
+- Distributed Deep Learning
+- High-Performance Computing
 
-- Identified an opportunity to hide dynamic-feature transfer latency while NCCL bandwidth is idle during the forward pass.
-- Designed a Planner--Syncer system that prepares data placement and asynchronously multicasts features for the next batch in parallel with the current forward pass.
-- Developed a hybrid synchronization strategy that uses P2P transport for high-dimensional features and shared memory for low-dimensional features.
-- *Key technologies:* PyTorch Distributed, caching, DGL, NCCL, Gloo, shared memory, multiprocessing, multithreading, and zero-copy communication.
+== Current Work
+
+*A Scalable Temporal Graph Neural Network Training Framework* \n
+See the [research.html Research] page for details.
+
+== Selected Publications ([publications.html Full List])
+
+- *A Pavement Crack Segmentation Method Based on Deformable Convolution and Enhanced Perceive Network.* /Multimedia Tools and Applications/, 2025. [https://link.springer.com/article/10.1007/s11042-024-19884-4 Paper]
+- *Single Human Parsing Based on Visual Attention and Feature Enhancement.* /Journal of Advanced Computational Intelligence and Intelligent Informatics/, 2023. [https://www.jstage.jst.go.jp/article/jaciii/27/4/27_561/_article/-char/ja/ Paper]
+- *Reduced Reference Quality Assessment for Image Retargeting by Earth Mover's Distance.* /Applied Sciences/, 2021. [https://www.mdpi.com/2076-3417/11/20/9776 Paper]
 
 == Education
 
-=== Texas State University
-/Aug 2024 -- Present/ \n
-Ph.D. Student in Computer Science (Advisor: Chul-Ho Lee) \n
-Machine Learning Systems, Graph Neural Networks
-
-=== China University of Geosciences
-/Sep 2021 -- Jun 2024/ \n
-M.Eng. in Electronic and Information (Advisor: Longsheng Wei) \n
-Computer Vision, Image Quality Assessment
-
-=== Hubei University of Technology
-/Sep 2008 -- Jun 2012/ \n
-B.Eng. in Electrical Engineering and Automation
-
-== Publications
-
-=== A Pavement Crack Segmentation Method Based on Deformable Convolution and Enhanced Perceive Network
-[https://link.springer.com/article/10.1007/s11042-024-19884-4 Paper] \n
-*Lei Zhao*, Longsheng Wei, Zhi Ma, Zhiheng Liu. /Multimedia Tools and Applications/, 84(19):20995--21016, 2025.
-
-- Designed the network structure based on deformable convolution and a customized UperNet.
-- Reduced the UperNet layers and simplified the PPM head for local texture details.
-- Adopted deformable convolution for strip-like pavement cracks.
-- Fused features from different heads with trainable channel weights.
-
-=== Single Human Parsing Based on Visual Attention and Feature Enhancement
-[https://www.jstage.jst.go.jp/article/jaciii/27/4/27_561/_article/-char/ja/ Paper] \n
-Zhi Ma, *Lei Zhao*, Longsheng Wei. /Journal of Advanced Computational Intelligence and Intelligent Informatics/, 27(4):561--566, 2023.
-
-- Designed the network structure based on cross-attention and ResNet-101.
-- Added an edge-sensing module for better edge perception.
-
-=== Reduced Reference Quality Assessment for Image Retargeting by Earth Mover's Distance
-[https://www.mdpi.com/2076-3417/11/20/9776 Paper] \n
-Longsheng Wei, *Lei Zhao*, Jian Peng. /Applied Sciences/, 11(20):9776, 2021.
-
-- Designed the network structure based on SIFT and saliency features.
-
-== Projects
-
-=== Building Low-Cost High-Performance GPU Computing Servers for Laboratory
-/Nov 2022 -- Apr 2023/
-
-- Purchased and assembled hardware including motherboards, PSUs, RAM, GPUs, PCIe splitters, SSDs, and HDDs.
-- Installed Xubuntu and configured CUDA, Docker, proxy rules, NAT traversal, and X11 forwarding.
-- Set up a dataset server and shared directories with NFS.
-- Created Dockerfiles for frequently used environments.
-- Benchmarked combinations of CPU families, PCIe lane widths and generations, and NVIDIA GPUs.
-- Tuned performance with htop, nvtop, iotop, top, bcache, and swap.
-
-[img{480}{}{GPU computing cluster} img/gpu_cluster.jpeg]
-
-[img{480}{}{Server motherboard} img/motherboard.jpeg]
-
-=== EEG and EOG based Real-Time Driver Fatigue Detection
-/Jun 2022 -- Aug 2022/ | [https://github.com/dttutty/SEED-VIG-CNN GitHub] \n
-/China Graduate Electronics Design Contest/
-
-- Developed a module to translate MATLAB data to Python pickle dumps.
-- Designed a CNN-based network to fuse EEG and EOG features for real-time driver-fatigue detection.
-- Prepared presentation slides and a poster for demonstration.
-
-=== A Malfunction Detection System for Guangzhou Metro System
-/Apr 2022 -- Jun 2023/
-
-- Developed image preprocessing to combine source images and generate target-area images based on carriage characteristics.
-- Adopted YOLOv5 and Fast R-CNN in the malfunction-detection process.
-- Developed a module to fuse recognition results and provide a Flask API.
-- Created a Docker Compose deployment for the frontend, Java backend, Python backend, and database.
-
-== Experience
-
-=== Wuhan Stack Tech Co., Ltd.
-/Founder and Developer, Jun 2016 -- May 2020/
-
-- Developed websites, Chrome extensions, and WeChat Mini Programs.
-
-=== Ericsson
-/Radio Access Network Engineer, Jul 2012 -- May 2016/
-
-- Worked on system integration, network optimization, and signal analysis.
-- Verified features against 3GPP specifications.
-
-=== HGDonline.net Coding Club
-/Web Developer, Sep 2010 -- Jun 2011/
-
-- Participated in the revision of the university BBS.
-- Developed 59score by reverse-engineering the undergraduate registrar system, enabling students to check their grades.
-
-== Skills
-
-- *Deep Learning Systems:* Pipeline-bubble optimization, PyTorch profiling, Distributed Data Parallel (DDP), DeepSpeed, and 3D parallelism.
-- *Programming and Frameworks:* Python (PyTorch, OpenCV, TraceViz), C/C\+\+ (OpenMP), CUDA, and shell scripting.
-- *Systems and Infrastructure:* Linux, Docker Compose, Git, network analysis (Wireshark), and Slurm.
-- *Web and Tools:* JavaScript (AngularJS, Vue.js), PHP (Laravel), API testing (Postman), HTTP debugging (Fiddler), and MySQL.
-
-== Awards
-
-- *China University of Geosciences:* First Class Scholarship twice, Second Class Scholarship once, and Third Class Prize in the China Graduate Electronics Design Contest.
-- *Hubei University of Technology:* Second Class Scholarship once, Third Class Scholarship twice, and Outstanding Student.
-
-== Patents
-
-- A Human Body Posture Estimation Method and System Based on Shape Similarity. CN202210752411.0
-- A Reference-Free Image Quality Evaluation Method Based on Graph Convolution and Multi-scale Features. CN202310801526.9
-- A Twin Network Single Target Tracking Method and Device. CN202310897743.2
-- Real-time Semantic Segmentation Method, Device, Electronic Equipment, and Storage Medium for Night Images. CN202310856554.0
+- *Texas State University*, Ph.D. Student in Computer Science, 2024--Present.
+- *China University of Geosciences*, M.Eng. in Electronic and Information, 2021--2024.
+- *Hubei University of Technology*, B.Eng. in Electrical Engineering and Automation, 2008--2012.
 
 © Lei Zhao
