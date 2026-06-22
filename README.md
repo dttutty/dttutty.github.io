@@ -1,6 +1,6 @@
 # 个人网站
 
-本站使用 [jemdoc](https://github.com/jem/jemdoc) 生成。导航定义在 `MENU`，各栏目内容位于对应的 `.jemdoc` 文件；同名 `.html` 文件和 `jemdoc.css` 是生成结果。
+本站使用 [jemdoc](https://github.com/jem/jemdoc) 生成。导航定义在 `MENU`，各栏目内容位于对应的 `.jemdoc` 文件；`jemdoc.conf` 统一注入页面头部配置和 Google tag。同名 `.html` 文件和 `jemdoc.css` 是生成结果。
 
 ## 生成页面
 

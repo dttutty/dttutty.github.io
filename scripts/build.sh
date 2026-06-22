@@ -41,4 +41,4 @@ docker run --rm \
   --volume "${build_dir}:/jemdoc:ro" \
   --workdir /site \
   "${PYTHON_IMAGE}" \
-  python /jemdoc/jemdoc "${PAGES[@]}"
+  python /jemdoc/jemdoc -c jemdoc.conf "${PAGES[@]}"
