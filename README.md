@@ -19,3 +19,9 @@ make build
 ```bash
 sudo ./install-root.sh
 ```
+
+## Hysteria 2
+
+`cloudcone/hysteria/` 部署固定并校验的官方 Hysteria 2 二进制，通过 systemd 在 UDP 443 上提供服务。配置使用 Let's Encrypt 证书、Salamander 混淆和随机生成的独立认证密码；secret 只保存在服务器的 `/etc/hysteria/config.yaml` 与用户私有的 `/home/lei1/hy2-client/`，不会写入仓库。
+
+顶层 `cloudcone/Caddyfile` 禁用 Caddy 的 HTTP/3 以释放 UDP 443，并把 `hy2.dttutty.com` 的 HTTP ACME challenge 转发给 Hysteria。Caddy 的 TCP 443 HTTPS 和现有访问通知服务不受影响。
