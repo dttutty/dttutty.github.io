@@ -212,13 +212,22 @@ li {
   margin: 0.45rem 0;
 }
 
-.dated-list span {
+.dated-list > li > span,
+.location {
   color: #555555;
   font-variant-numeric: tabular-nums;
 }
 
 .dated-list strong {
   display: inline;
+}
+
+.experience-entry {
+  margin-bottom: 1rem;
+}
+
+.experience-entry ul {
+  margin-top: 0.5rem;
 }
 
 footer {
@@ -305,7 +314,7 @@ footer a {
     margin-bottom: 0.65rem;
   }
 
-  .dated-list span {
+  .dated-list > li > span {
     display: block;
   }
 }
