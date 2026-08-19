@@ -205,7 +205,7 @@ li {
   list-style: none;
 }
 
-.dated-list li {
+.dated-list > li {
   display: grid;
   grid-template-columns: 7rem minmax(0, 1fr);
   column-gap: 0.65rem;
@@ -288,6 +288,20 @@ footer a {
   color: #718d9b;
 }
 
+@media (max-width: 850px) {
+  .industry-heading {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .industry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.75rem;
+    text-align: left;
+  }
+}
+
 @media (max-width: 700px) {
   html {
     scroll-padding-top: 7.5rem;
@@ -348,7 +362,7 @@ footer a {
     height: 160px;
   }
 
-  .dated-list li {
+  .dated-list > li {
     display: block;
     margin-bottom: 0.65rem;
   }
@@ -357,17 +371,6 @@ footer a {
     display: block;
   }
 
-  .industry-heading {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
-  }
-
-  .industry-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 0.75rem;
-    text-align: left;
-  }
 }
 
 @media (max-width: 460px) {
