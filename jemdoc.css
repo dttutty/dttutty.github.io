@@ -179,38 +179,36 @@ li {
   margin-top: 0.9rem;
 }
 
-.profile-links-heading {
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-.profile-links {
+.creator-links {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.35rem 0.8rem;
-  margin-top: 0.2rem;
+  gap: 1rem;
+  margin: 0.25rem 0 1.1rem;
 }
 
-.profile-links a {
-  display: grid;
-  grid-template-columns: 1.5rem minmax(0, 1fr);
-  gap: 0.5rem;
-  align-items: center;
-  min-height: 2.5rem;
-  padding: 0.35rem 0;
+.creator-link {
   border-bottom: 1px solid var(--light-border);
+}
+
+.creator-link a {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0.45rem 0;
   line-height: 1.25;
   text-decoration: none;
 }
 
-.profile-links img {
+.creator-link img {
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
-.profile-links a:hover span,
-.profile-links a:focus span {
+.creator-link a:hover span,
+.creator-link a:focus span {
   text-decoration: underline;
 }
 
@@ -391,8 +389,9 @@ footer a {
     height: 160px;
   }
 
-  .profile-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .creator-links {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .dated-list > li {
