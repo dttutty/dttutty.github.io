@@ -59,8 +59,8 @@ a:focus-visible {
 
 .layout {
   display: grid;
-  grid-template-columns: 200px minmax(0, 850px);
-  width: min(100% - 2rem, 1070px);
+  grid-template-columns: 250px minmax(0, 850px);
+  width: min(100% - 2rem, 1120px);
   margin: 0 auto;
   align-items: start;
 }
