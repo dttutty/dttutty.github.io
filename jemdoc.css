@@ -175,6 +175,10 @@ li {
   object-position: 50% 35%;
 }
 
+.contact-list {
+  margin-top: 0.9rem;
+}
+
 .profile-links {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
