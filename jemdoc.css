@@ -304,7 +304,7 @@ footer a {
 
 @media (max-width: 700px) {
   html {
-    scroll-padding-top: 7.5rem;
+    scroll-padding-top: 0;
   }
 
   body {
@@ -317,9 +317,7 @@ footer a {
   }
 
   .sidebar {
-    position: sticky;
-    top: 0;
-    z-index: 5;
+    position: static;
     min-height: 0;
     padding: 0.45rem 1rem 0.55rem;
     border-width: 0 0 1px;
@@ -332,7 +330,7 @@ footer a {
   }
 
   .sidebar .menu-category {
-    display: none;
+    flex: 0 0 100%;
   }
 
   .sidebar a {
@@ -340,16 +338,12 @@ footer a {
     line-height: 1.65;
   }
 
-  .sidebar a:nth-of-type(n + 7) {
-    display: none;
-  }
-
   main {
     padding: 0 1rem 1.5rem;
   }
 
   section {
-    scroll-margin-top: 7.5rem;
+    scroll-margin-top: 1rem;
   }
 
   .profile {
