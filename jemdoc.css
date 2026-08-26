@@ -59,8 +59,8 @@ a:focus-visible {
 
 .layout {
   display: grid;
-  grid-template-columns: 250px minmax(0, 850px);
-  width: min(100% - 2rem, 1120px);
+  grid-template-columns: 160px minmax(0, 850px);
+  width: min(100% - 2rem, 1030px);
   margin: 0 auto;
   align-items: start;
 }
@@ -90,41 +90,6 @@ a:focus-visible {
 .sidebar a.current {
   border-bottom: 1px solid #777777;
   color: #022b6d;
-}
-
-.sidebar-links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0.15rem;
-}
-
-.sidebar-links a {
-  align-self: stretch;
-  display: grid;
-  grid-template-columns: 1.5rem minmax(0, 1fr);
-  gap: 0.5rem;
-  align-items: center;
-  min-height: 2.5rem;
-  margin-left: 0;
-  padding: 0.35rem 0.25rem;
-  border-bottom: 1px solid var(--light-border);
-  line-height: 1.25;
-  text-decoration: none;
-}
-
-.sidebar-links a:last-child {
-  border-bottom: 0;
-}
-
-.sidebar-links img {
-  display: block;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.sidebar-links a:hover span,
-.sidebar-links a:focus span {
-  text-decoration: underline;
 }
 
 .menu-category {
@@ -212,6 +177,41 @@ li {
 
 .contact-list {
   margin-top: 0.9rem;
+}
+
+.profile-links-heading {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.profile-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.profile-links a {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(0, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--light-border);
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.profile-links img {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.profile-links a:hover span,
+.profile-links a:focus span {
+  text-decoration: underline;
 }
 
 .publication-list {
@@ -373,19 +373,6 @@ footer a {
     line-height: 1.65;
   }
 
-  .sidebar-links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    flex: 0 0 100%;
-    gap: 0 1rem;
-    margin-top: 0;
-  }
-
-  .sidebar-links a {
-    padding: 0.4rem 0;
-    line-height: 1.25;
-  }
-
   main {
     padding: 0 1rem 1.5rem;
   }
@@ -402,6 +389,10 @@ footer a {
   .profile > img {
     width: 120px;
     height: 160px;
+  }
+
+  .profile-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .dated-list > li {
