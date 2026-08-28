@@ -40,16 +40,19 @@
     <article>
       <p class="eyebrow">Smart Search for ChatGPT</p>
       <h1>Privacy Policy</h1>
-      <p class="effective">Effective date: August 27, 2026</p>
+      <p class="effective">Effective date: August 28, 2026</p>
       <p>Smart Search for ChatGPT is an independent Chrome extension that improves navigation and natural-language search within ChatGPT. It is not affiliated with, endorsed by, or sponsored by OpenAI.</p>
 
       <h2>Data the extension processes</h2>
       <p>The extension processes the minimum data needed for its user-facing features:</p>
       <ul>
         <li>ChatGPT conversation identifiers, titles, creation dates, and last-update timestamps obtained from ChatGPT conversation-list responses in the user's current signed-in ChatGPT session.</li>
+        <li>ChatGPT's opaque account identifier, used only to keep each signed-in account's local indexes and Smart Search project data separate.</li>
+        <li>The current ChatGPT account email address, stored locally and displayed only in the extension popup so the user can identify which account owns the shown index.</li>
         <li>Search topics entered by the user in the Smart Search dialog and the generated search prompt.</li>
-        <li>Search-result table content already rendered by ChatGPT, only to turn creation-date cells into links to the corresponding original conversations.</li>
-        <li>The URL of the dedicated <code>better search</code> ChatGPT project and a temporarily pending search prompt in Chrome local extension storage.</li>
+        <li>Search-result table content already rendered inside the <code>Smart Search</code> project, only to add open-in-new-window icons beside matching conversation titles and report whether the local index covers every displayed row.</li>
+        <li>A local conversation index containing only those identifiers, titles, creation dates, and last-update timestamps.</li>
+        <li>The names and identifiers of ChatGPT projects the extension sees, the URL of the dedicated <code>Smart Search</code> project, the conversation-date display preference, and a temporarily pending search prompt in Chrome local extension storage.</li>
       </ul>
       <p>The extension does not read or store ChatGPT authentication credentials, cookies, passwords, payment information, or the full message bodies of the user's conversation history.</p>
 
@@ -58,17 +61,17 @@
       <ul>
         <li>Display conversation timestamps beside ChatGPT sidebar titles.</li>
         <li>Generate a natural-language history-search prompt from the user's topic and optional time range.</li>
-        <li>Open a new search chat inside the <code>better search</code> ChatGPT project.</li>
-        <li>Link creation dates in search results to the matching original conversations.</li>
+        <li>Open a new search chat inside the <code>Smart Search</code> ChatGPT project.</li>
+        <li>Add open-in-new-window icons beside matching conversation titles in <code>Smart Search</code> result tables and show local index-coverage progress when rows are still unmatched.</li>
       </ul>
       <p>When the user clicks <strong>Search</strong>, the generated prompt is entered into and sent through ChatGPT using the user's current ChatGPT session. OpenAI's processing of that prompt and the resulting ChatGPT response is governed by OpenAI's own terms and privacy policies.</p>
 
       <h2>Storage and retention</h2>
       <p>All extension-managed data remains in the user's browser:</p>
       <ul>
-        <li>Conversation metadata is kept only in page memory and is discarded when the ChatGPT tab is closed or reloaded.</li>
+        <li>Conversation metadata is merged by conversation identifier into a separate Chrome local extension storage index for each ChatGPT account and remains there until the user clears the extension's data or uninstalls the extension.</li>
         <li>A pending search prompt is removed after it is sent or expires after approximately two minutes.</li>
-        <li>The <code>better search</code> project URL remains in Chrome local extension storage until the user clears the extension's data or uninstalls the extension.</li>
+        <li>The opaque ChatGPT account identifier is stored locally as a namespace. The corresponding account email, seen project names and identifiers, the <code>Smart Search</code> project URL, and pending searches are kept separate by that namespace. The conversation-date display preference is shared across accounts. These values remain in Chrome local extension storage until the user clears the extension's data or uninstalls the extension.</li>
       </ul>
 
       <h2>Data sharing and sale</h2>
@@ -77,7 +80,7 @@
 
       <h2>Chrome permissions</h2>
       <ul>
-        <li><strong>Storage:</strong> remembers the dedicated ChatGPT project URL and temporarily stores a pending search prompt while navigating to that project.</li>
+        <li><strong>Storage:</strong> keeps account-separated local conversation and project metadata indexes, stores each account's email for identification in the popup, remembers each account's dedicated <code>Smart Search</code> project URL, remembers the conversation-date display preference, and temporarily stores a pending search prompt while navigating to that project.</li>
         <li><strong>Access to <code>chatgpt.com</code> and <code>chat.openai.com</code>:</strong> injects the Smart Search interface, observes ChatGPT conversation-list metadata, displays timestamps, and links search results.</li>
       </ul>
 
@@ -101,3 +104,4 @@
   </footer>
 </body>
 </html>
+
