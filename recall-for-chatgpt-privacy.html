@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Recall for ChatGPT Chrome extension.">
+  <link rel="canonical" href="https://dttutty.com/recall-for-chatgpt-privacy.html">
+  <title>Privacy Policy — Recall for ChatGPT</title>
+  <style>
+    :root { color-scheme: dark; --bg:#090b11; --card:#11141c; --line:#272c38; --text:#f7f8fb; --muted:#c4cad6; --accent:#b9a7ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-width:320px; background:radial-gradient(circle at 12% 0%,rgba(139,92,246,.14),transparent 32rem),var(--bg); color:var(--text); font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    header,main,footer { width:min(840px,calc(100% - 40px)); margin-inline:auto; }
+    header { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid var(--line); }
+    header strong { letter-spacing:-.02em; }
+    a { color:inherit; text-underline-offset:4px; }
+    header a { color:#aeb6c5; font-size:14px; text-decoration:none; }
+    main { padding:64px 0 96px; }
+    article { padding:clamp(26px,6vw,62px); border:1px solid var(--line); border-radius:22px; background:rgba(255,255,255,.035); }
+    .eyebrow { margin:0 0 12px; color:var(--accent); font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    h1,h2 { line-height:1.12; letter-spacing:-.035em; }
+    h1 { margin:0 0 14px; font-size:clamp(40px,7vw,64px); }
+    h2 { margin:50px 0 14px; font-size:27px; }
+    p,li { color:var(--muted); }
+    li + li { margin-top:8px; }
+    .effective { margin-top:0; color:#8993a5; }
+    code { padding:2px 5px; border-radius:5px; background:rgba(255,255,255,.08); font-size:.9em; }
+    footer { padding:28px 0 42px; display:flex; justify-content:space-between; gap:24px; border-top:1px solid var(--line); color:#7d8799; font-size:12px; }
+    footer p { margin:0; }
+    @media (max-width:600px) { main{padding-top:42px} footer{flex-direction:column} }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Recall for ChatGPT</strong>
+    <a href="https://dttutty.com/">Developer website</a>
+  </header>
+
+  <main>
+    <article>
+      <p class="eyebrow">Recall for ChatGPT</p>
+      <h1>Privacy Policy</h1>
+      <p class="effective">Effective date: August 27, 2026</p>
+      <p>Recall for ChatGPT is an independent Chrome extension that improves navigation and natural-language search within ChatGPT. It is not affiliated with, endorsed by, or sponsored by OpenAI.</p>
+
+      <h2>Data the extension processes</h2>
+      <p>The extension processes the minimum data needed for its user-facing features:</p>
+      <ul>
+        <li>ChatGPT conversation identifiers, titles, creation dates, and last-update timestamps obtained from ChatGPT conversation-list responses in the user's current signed-in ChatGPT session.</li>
+        <li>Search topics entered by the user in the Smart Search dialog and the generated search prompt.</li>
+        <li>Search-result table content already rendered by ChatGPT, only to turn creation-date cells into links to the corresponding original conversations.</li>
+        <li>The URL of the dedicated <code>better search</code> ChatGPT project and a temporarily pending search prompt in Chrome local extension storage.</li>
+      </ul>
+      <p>The extension does not read or store ChatGPT authentication credentials, cookies, passwords, payment information, or the full message bodies of the user's conversation history.</p>
+
+      <h2>How the data is used</h2>
+      <p>The data is used only to:</p>
+      <ul>
+        <li>Display conversation timestamps beside ChatGPT sidebar titles.</li>
+        <li>Generate a natural-language history-search prompt from the user's topic and optional time range.</li>
+        <li>Open a new search chat inside the <code>better search</code> ChatGPT project.</li>
+        <li>Link creation dates in search results to the matching original conversations.</li>
+      </ul>
+      <p>When the user clicks <strong>Search</strong>, the generated prompt is entered into and sent through ChatGPT using the user's current ChatGPT session. OpenAI's processing of that prompt and the resulting ChatGPT response is governed by OpenAI's own terms and privacy policies.</p>
+
+      <h2>Storage and retention</h2>
+      <p>All extension-managed data remains in the user's browser:</p>
+      <ul>
+        <li>Conversation metadata is kept only in page memory and is discarded when the ChatGPT tab is closed or reloaded.</li>
+        <li>A pending search prompt is removed after it is sent or expires after approximately two minutes.</li>
+        <li>The <code>better search</code> project URL remains in Chrome local extension storage until the user clears the extension's data or uninstalls the extension.</li>
+      </ul>
+
+      <h2>Data sharing and sale</h2>
+      <p>The developer does not operate a server for this extension and does not receive, collect, sell, rent, or share user data. The extension contains no advertising, analytics, tracking pixels, or third-party SDKs.</p>
+      <p>The extension communicates only with ChatGPT as part of the user-requested search workflow. No user data is transmitted to the developer.</p>
+
+      <h2>Chrome permissions</h2>
+      <ul>
+        <li><strong>Storage:</strong> remembers the dedicated ChatGPT project URL and temporarily stores a pending search prompt while navigating to that project.</li>
+        <li><strong>Access to <code>chatgpt.com</code> and <code>chat.openai.com</code>:</strong> injects the Smart Search interface, observes ChatGPT conversation-list metadata, displays timestamps, and links search results.</li>
+      </ul>
+
+      <h2>User control</h2>
+      <p>Users can stop all processing by disabling or uninstalling the extension. Uninstalling the extension removes its Chrome local storage. Users can also clear extension data through Chrome settings.</p>
+
+      <h2>Limited Use</h2>
+      <p>Recall for ChatGPT's use of information received from Chrome APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data is used only to provide the extension's disclosed single purpose and is not used for advertising, creditworthiness, or any unrelated purpose.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If the extension's data practices change, this policy and the Chrome Web Store disclosures will be updated before the changed practices take effect.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy or the extension can be sent to <a href="mailto:dttutty@gmail.com">dttutty@gmail.com</a>.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p><a href="https://dttutty.com/">dttutty.com</a></p>
+    <p>© 2026 Lei Zhao</p>
+  </footer>
+</body>
+</html>
