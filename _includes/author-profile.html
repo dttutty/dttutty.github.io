@@ -17,7 +17,7 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">{{ author.name }}{% if author.name_zh %}（{{ author.name_zh }}）{% endif %}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio or author.location or author.employer %}
       <p class="author__bio">
