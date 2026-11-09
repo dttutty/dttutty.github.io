@@ -92,7 +92,10 @@ body a:any-link:focus-visible {
 }
 
 .publication--muted,
-.publication--muted a:any-link {
+.publication--muted a:any-link,
+#experience + ul > li:nth-child(n + 2),
+#education + ul > li:nth-child(n + 2),
+#patents + ul > li {
   color: #999;
 }
 
