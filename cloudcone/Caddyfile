@@ -1,0 +1,41 @@
+{
+	servers {
+		protocols h1 h2
+	}
+}
+
+http://hy2.dttutty.com {
+	@acme path /.well-known/acme-challenge/*
+	handle @acme {
+		reverse_proxy 127.0.0.1:5080
+	}
+
+	handle {
+		respond 404
+	}
+}
+
+notify.dttutty.com {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "no-referrer"
+		-Server
+	}
+
+	request_body {
+		max_size 4KB
+	}
+
+	@notify path /visit /healthz
+	handle @notify {
+		reverse_proxy 127.0.0.1:8787
+	}
+
+	handle {
+		respond 404
+	}
+}

@@ -1,0 +1,243 @@
+---
+---
+
+html {
+  font-size: 15px;
+}
+
+.sidebar p,
+.sidebar li {
+  font-size: 0.95rem;
+}
+
+.sidebar .author__name {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 925px) {
+  .sidebar {
+    max-width: 190px;
+  }
+
+  .page {
+    padding-right: 0;
+  }
+}
+
+.page__content h2 {
+  font-size: 1.4rem;
+  margin-top: 1em;
+}
+
+.page__content p {
+  margin-bottom: 0.5em;
+}
+
+.page__content ul {
+  padding-left: 2em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+
+#main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+[id] {
+  scroll-margin-top: 5rem;
+}
+
+.masthead__menu-item.selected a {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.author__avatar img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.author__bio > span {
+  display: block;
+}
+
+body a:any-link {
+  color: #224b8d;
+}
+
+body a:any-link:hover,
+body a:any-link:focus-visible {
+  color: #142d55;
+}
+
+.masthead__menu-item a:any-link,
+.masthead__menu-item a:any-link:hover,
+.masthead__menu-item a:any-link:focus-visible,
+.author__urls a:any-link,
+.author__urls a:any-link:hover,
+.author__urls a:any-link:focus-visible {
+  color: var(--global-text-color);
+}
+
+.publication-list > li {
+  margin-bottom: 1em;
+}
+
+.page__content h2 .publication-note {
+  font-size: 0.65em;
+  font-weight: normal;
+}
+
+.publication-pseudonym-icon {
+  margin-left: 0.25em;
+  font-size: 0.85em;
+  color: #555;
+}
+
+.news-link-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.3em;
+  vertical-align: -0.12em;
+  line-height: 1em;
+  text-align: center;
+  object-fit: contain;
+}
+
+.news-link-icon--youtube {
+  color: #ff0000;
+}
+
+.news-link-icon--paper {
+  color: #d32f2f;
+}
+
+.news-link-icon--image {
+  color: #607d8b;
+}
+
+.news-link-icon--crrc {
+  object-fit: cover;
+  object-position: left center;
+}
+
+.page__footer {
+  position: static;
+  color: var(--global-text-color);
+}
+
+.author__urls-wrapper .btn {
+  color: var(--global-text-color) !important;
+  background: var(--global-footer-bg-color);
+}
+
+.author__urls .fa-file-pdf {
+  color: #d32f2f;
+}
+
+.author__urls .ai-google-scholar {
+  color: #4285f4;
+}
+
+.author__urls .fa-github {
+  color: #181717;
+}
+
+.author__urls .fa-linkedin {
+  color: #0a66c2;
+}
+
+.sidebar .author__brand-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  max-width: none;
+  margin-right: 0.55em;
+  vertical-align: -0.12em;
+}
+
+.author__urls .author__gallery {
+  width: 175px;
+  max-width: 100%;
+  margin-top: 0.75rem;
+  white-space: normal;
+}
+
+.author__gallery-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--global-footer-bg-color);
+}
+
+.author__urls .author__gallery-frame > a {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.author__urls .author__gallery-frame > a.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.author__gallery-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.author__gallery-frame a:focus-visible img {
+  outline: 2px solid #224b8d;
+  outline-offset: 2px;
+}
+
+.author__gallery-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.author__urls-wrapper .author__gallery-controls button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 3px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.author__urls-wrapper .author__gallery-controls button[aria-pressed="true"] {
+  border-color: var(--global-text-color);
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .author__urls .author__gallery-frame > a {
+    transition: none;
+  }
+}

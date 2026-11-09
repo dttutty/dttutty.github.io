@@ -1,0 +1,9 @@
+{% assign publications = site.publications | sort: 'order' %}
+<ul class="publication-list">
+{% for publication in publications %}
+<li class="publication">
+  <span class="publication-title">{% if publication.paper_url %}<a href="{{ publication.paper_url | escape }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</span>{% if publication.pseudonym %}<i class="fas fa-user-secret publication-pseudonym-icon" role="img" aria-label="Pseudonymous title"></i>{% endif %}{% if publication.authors %},{% endif %}
+  {% include publication-details.html publication=publication %}
+</li>
+{% endfor %}
+</ul>

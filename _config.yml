@@ -1,0 +1,89 @@
+locale: en-US
+site_theme: default
+title: Lei Zhao
+title_separator: "|"
+name: Lei Zhao
+description: "Lei Zhao is a computer science Ph.D. candidate working on machine learning systems, graph neural networks, and CXL memory systems."
+url: https://dttutty.com
+baseurl: ""
+repository: dttutty/dttutty.github.io
+timezone: America/Chicago
+
+author:
+  avatar: /img/photo.jpg
+  name: Lei Zhao
+  email: dttutty@gmail.com
+  cv: /cv.pdf
+  googlescholar: "https://scholar.google.com/citations?user=VijKZS8AAAAJ&hl=en"
+  github: dttutty
+  linkedin: dttutty
+  chrome_web_store: "https://chromewebstore.google.com/search/dttutty.com"
+  vscode_marketplace: "https://marketplace.visualstudio.com/search?term=dttutty&target=VSCode&category=All%20categories&sortBy=Relevance"
+
+breadcrumbs: false
+future: true
+read_more: disabled
+words_per_minute: 160
+atom_feed:
+  hide: true
+comments:
+  provider: false
+analytics:
+  provider: google-analytics-4
+  google:
+    tracking_id: G-GKQRG7FMQF
+
+include:
+  - _pages
+  - assets/js/_main.js
+exclude:
+  - .agents
+  - .aws
+  - .codex
+  - .bundle
+  - .github
+  - .jekyll-cache
+  - .sass-cache
+  - cloudcone
+  - scripts
+  - vendor
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - AGENTS.md
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+collections:
+  publications:
+    output: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+      analytics: false
+      share: false
+      comments: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+  - jemoji
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
