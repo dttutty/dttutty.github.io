@@ -31,7 +31,7 @@ My research focuses on **ML Systems**, with work on AI Agent Tool Calling, CXL M
 - Block-Based Lossless KV Cache Compression
 - Statistics-Based Lossless Activation Compression
 
-## 📚 Publications <small class="publication-note">(<i class="fas fa-user-secret publication-pseudonym-icon" role="img" aria-label="Incognito icon"></i> marks pseudonymous titles and anonymized coauthors)</small>
+## 📚 Publications <small class="publication-note">(<i class="fas fa-user-secret publication-pseudonym-icon" role="img" aria-label="Incognito icon"></i> marks pseudonymous titles)</small>
 {: #publications}
 
 {% include publication-list.html %}
