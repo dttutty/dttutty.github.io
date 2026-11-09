@@ -91,6 +91,16 @@ body a:any-link:focus-visible {
   margin-bottom: 1em;
 }
 
+.publication--muted,
+.publication--muted a:any-link {
+  color: #666;
+}
+
+.publication--muted a:any-link:hover,
+.publication--muted a:any-link:focus-visible {
+  color: #444;
+}
+
 .page__content h2 .publication-note {
   font-size: 0.65em;
   font-weight: normal;
