@@ -132,7 +132,26 @@ body a:any-link:focus-visible {
 
 .page__footer {
   position: static;
-  color: var(--global-text-color);
+  margin-top: 1.25rem;
+  background: transparent;
+  border-top: 0;
+}
+
+.page__footer footer {
+  margin: 0;
+  max-width: none;
+  padding: 0 1rem 0.75rem;
+  text-align: right;
+}
+
+.page__footer .page__footer-copyright {
+  color: var(--global-text-color-light);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.page__footer a:any-link {
+  color: inherit;
 }
 
 .author__urls-wrapper .btn {
