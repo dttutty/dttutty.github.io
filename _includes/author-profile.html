@@ -19,10 +19,9 @@
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}{% if author.name_zh %}（{{ author.name_zh }}）{% endif %}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio or author.location or author.employer %}
+    {% if author.bio or author.employer %}
       <p class="author__bio">
         {% if author.bio %}<span>{{ author.bio }}</span>{% endif %}
-        {% if author.location %}<span>{{ author.location }}</span>{% endif %}
         {% if author.employer %}<span>{{ author.employer }}</span>{% endif %}
       </p>
     {% endif %}
@@ -33,6 +32,9 @@
     <ul class="author__urls social-icons">
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+      {% endif %}
+      {% if author.location %}
+        <li><span class="author__location"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</span></li>
       {% endif %}
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
