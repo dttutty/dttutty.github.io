@@ -12,7 +12,7 @@ My research focuses on **ML Systems**, with work on AI Agent Tool Calling, CXL M
 ## 📰 News
 {: #news}
 
-- *2026.11*: 🔥 Released <img class="news-link-icon" src="/img/tools/github.svg" alt=""><a href="https://github.com/dttutty/RISCuda">RISCuda</a>, a GPU-resident environment for LLM tool calling.
+- *2026.11*: 🔥 Released <i class="fab fa-github news-link-icon" aria-hidden="true"></i><a href="https://github.com/dttutty/RISCuda">RISCuda</a>, a GPU-resident environment for LLM tool calling.
 - *2026.10*: 🎉 My work Accelerating cuGraph GNN Training via CXL Memory Pool Data Offloading was presented at the <a href="https://www.youtube.com/watch?v=vRGO8Vs3TzM"><i class="fab fa-youtube news-link-icon news-link-icon--youtube" aria-hidden="true"></i>OCP 2026 Summit</a>.
 - *2026.09*: 🔥 Released <a href="https://marketplace.visualstudio.com/items?itemName=dttutty.remote-local-network-share"><img class="news-link-icon" src="/img/tools/visual-studio-code.svg?v={{ site.time | date: '%s' }}" alt="">Remote Local Network Share</a>, a VS Code extension that lets Remote-SSH servers reach external resources through your laptop.
 - *2026.08*: 🎉 My first-author <a href="https://drive.google.com/file/d/1jpbRWOhyS6IqXmBEuFUxW7H1tmYLHEwI/view?usp=sharing"><i class="fas fa-file-pdf news-link-icon news-link-icon--paper" aria-hidden="true"></i>paper</a> <span style="white-space: nowrap;">[<i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/dttutty/frost">Code</a>]</span> was accepted by SIGMOD <strong>(CCF A, CORE A*)</strong>.

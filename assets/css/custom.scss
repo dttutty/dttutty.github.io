@@ -123,7 +123,6 @@ html[data-theme="dark"] {
 .publication-pseudonym-icon {
   margin-left: 0.25em;
   font-size: 0.85em;
-  color: #555;
 }
 
 .news-link-icon {
@@ -191,8 +190,9 @@ html[data-theme="dark"] {
   color: #4285f4;
 }
 
-.author__urls .fa-github {
-  color: #181717;
+body .fa-github,
+body .fa-user-secret {
+  color: #000;
 }
 
 .author__urls .fa-linkedin {
