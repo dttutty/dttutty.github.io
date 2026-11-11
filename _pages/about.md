@@ -7,7 +7,7 @@ analytics: true
 I am a Computer Science Ph.D. candidate at Texas State University, advised by [Dr. Chul-Ho Lee](https://sites.google.com/site/chulholeesite/).
 {: #home}
 
-My research focuses on **ML Systems**, with work on AI Agent Tool Calling, CXL Memory Pools, Near-Memory Processing, Linux Kernel and RISC-V Systems, Distributed GNNs, and Graph Recommendation Systems.
+My research focuses on **ML Systems**, with work on Distributed Training and Inference, AI Agent Tool Calling, CXL Memory Pools, Near-Memory Processing, Linux Kernel and RISC-V Systems, GNNs, and Graph RecSys.
 
 ## 📰 News
 {: #news}
