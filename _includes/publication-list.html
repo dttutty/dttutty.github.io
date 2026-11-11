@@ -2,7 +2,7 @@
 <ul class="publication-list">
 {% for publication in publications %}
 <li class="publication{% if publication.muted %} publication--muted{% endif %}">
-  <span class="publication-title">{% if publication.paper_url %}<a href="{{ publication.paper_url | escape }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</span>{% if publication.pseudonym %}<i class="fas fa-user-secret publication-pseudonym-icon" role="img" aria-label="Pseudonymous title"></i>{% endif %}{% if publication.authors %},{% endif %}
+  <span class="publication-title">{% if publication.paper_url %}<a href="{{ publication.paper_url | escape }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</span>{% if publication.code_url %} <a href="{{ publication.code_url | escape }}" style="white-space: nowrap;">[<i class="fab fa-github" aria-hidden="true"></i> Code]</a>{% endif %}{% if publication.pseudonym %}<i class="fas fa-user-secret publication-pseudonym-icon" role="img" aria-label="Pseudonymous title"></i>{% endif %}{% if publication.authors %},{% endif %}
   {% include publication-details.html publication=publication %}
 </li>
 {% endfor %}
