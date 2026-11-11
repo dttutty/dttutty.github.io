@@ -25,7 +25,7 @@ My research focuses on **ML Systems**, with work on AI Agent Tool Calling, CXL M
 {: #research}
 
 - Accelerating cuGraph GNN Training via CXL Memory Pool Data Offloading
-- [RISCuda: GPU-Resident LLM Tool Execution](https://github.com/dttutty/RISCuda)
+- <a href="https://github.com/dttutty/RISCuda"><i class="fab fa-github" aria-hidden="true"></i> RISCuda: GPU-Resident LLM Tool Execution</a>
 
 ## 📚 Publications <small class="publication-note">(<i class="fas fa-user-secret publication-pseudonym-icon" role="img" aria-label="Incognito icon"></i> marks descriptive titles used for manuscripts under review)</small>
 {: #publications}
