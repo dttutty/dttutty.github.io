@@ -40,7 +40,7 @@
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
       {% if author.cv %}
-        <li><a href="{{ author.cv | relative_url }}?v={{ site.time | date: '%s' }}" download="Lei-Zhao-CV.pdf"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>Download CV</a></li>
+        <li><a href="{{ author.cv | relative_url }}" download="Lei-Zhao-CV.pdf"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>Download CV</a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
