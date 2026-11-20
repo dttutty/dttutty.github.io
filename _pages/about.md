@@ -38,7 +38,7 @@ My research focuses on **ML Systems**, with work on Distributed Training and Inf
 - SK hynix America — Advanced Memory System Research Intern · May–Aug 2026
 - Wuhan Stack Tech Co., Ltd. — Founder and Web Developer · 2016–2020
 - Ericsson — Integration Engineer · 2012–2016
-- HGDonline.net Coding Club — Web Developer · 2010–2011
+- HGDonline.net — Web Developer · 2010–2011
 
 ## 🎓 Educations
 {: #education}
